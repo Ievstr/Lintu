@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lintu</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./libs/select2/select2.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  </head>
+  <body>
+    <header class="header js-header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__body">
+        <a href="#" class="logo">
+          <svg width="88" height="34">
+            <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <div class="header__content">
+          <nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item js-nav-sublist">
+      <a href="#" class="nav__link nav__link_dropdown">
+        Каталог
+        <svg width="16" height="16">
+          <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+        </svg>
+      </a>
+      <div class="nav__dropdown">
+        <div class="nav__dropdown-inner">
+          <ul class="nav__dropdown-list">
+            <li>
+              <a href="#" class="js-nav-sublink" data-sublist="1">
+                <div class="nav__dropdown-title">
+                  Кофе
+                  <span>Зерно, фильтр, бленды, моно</span>
+                </div>
+                <div class="arrow">
+                  <svg width="16" height="16">
+                    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <ul class="nav__dropdown-sublist">
+                <li><a href="#">Для эспрессо</a></li>
+                <li><a href="#">Для кофе с молоком</a></li>
+                <li><a href="#">Для турки</a></li>
+                <li><a href="#">Фильтр кофе</a></li>
+                <li><a href="#">Бленды</a></li>
+                <li><a href="#">Моно сорта</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-sublist="2">
+                <div class="nav__dropdown-title">
+                  Мерч
+                  <span>Футболки</span>
+                </div>
+                <div class="soon">скоро будет</div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__dropdown-block">
+            <div class="nav__dropdown-item" data-sublist="1">
+              <div class="nav__dropdown-group">
+                <div class="nav__dropdown-group-title">Тип</div>
+                <ul class="nav__dropdown-sublist">
+                  <li><a href="#">Для эспрессо</a></li>
+                  <li><a href="#">Для кофе с молоком</a></li>
+                  <li><a href="#">Для турки</a></li>
+                  <li><a href="#">Фильтр кофе</a></li>
+                  <li><a href="#">Бленды</a></li>
+                  <li><a href="#">Моно сорта</a></li>
+                </ul>
+              </div>
+
+              <div class="nav__dropdown-group">
+                <div class="nav__dropdown-group-title">Страна</div>
+                <ul class="nav__dropdown-sublist">
+                  <li><a href="#">Кения</a></li>
+                  <li><a href="#">Бразилия</a></li>
+                  <li><a href="#">Гватемала</a></li>
+                  <li><a href="#">Эфиопия</a></li>
+                  <li><a href="#">Колумбия</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav__item"><a href="#" class="nav__link">Карта кофеен</a></li>
+    <li class="nav__item header-desktop js-nav-sublist">
+      <a href="#" class="nav__link nav__link_dropdown">
+        Условия работы
+        <svg width="16" height="16">
+          <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+        </svg>
+      </a>
+      <div class="nav__dropdown">
+        <ul class="nav__dropdown-list">
+          <li>
+            <a href="#">
+              Оплата и доставка
+              <div class="arrow">
+                <svg width="16" height="16">
+                  <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Бонусная система
+              <div class="arrow">
+                <svg width="16" height="16">
+                  <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              FAQ
+              <div class="arrow">
+                <svg width="16" height="16">
+                  <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav__item header-mobile"><a href="#" class="nav__link">Оплата и доставка</a></li>
+    <li class="nav__item header-mobile"><a href="#" class="nav__link">Бонусная система</a></li>
+    <li class="nav__item header-mobile"><a href="#" class="nav__link">FAQ</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Блог Lintu</a></li>
+    <li class="nav__item header-desktop js-nav-sublist">
+      <a href="#" class="nav__link nav__link_dropdown">
+        Контакты
+        <svg width="16" height="16">
+          <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+        </svg>
+      </a>
+      <div class="nav__dropdown">
+        <div class="header__info">
+          <a href="tel:+79936186701" class="header__info-item">
+            <div class="header__info-title">Для звонков по России</div>
+            <div class="header__info-text">+7 993 618‑67‑01</div>
+          </a>
+
+          <a href="mailto:lintu@lintu-coffee.ru" class="header__info-item">
+            <div class="header__info-title">Эл.почта</div>
+            <div class="header__info-text">lintu@lintu-coffee.ru</div>
+          </a>
+
+          <div class="header__info-item">
+            <div class="header__info-title">Мы принимаем звонки</div>
+            <div class="header__info-text">Ежедневно: c 10-00 до 18-00</div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+  </ul>
+</nav>
+
+          <div class="header__info">
+            <a href="tel:+79936186701" class="header__info-item">
+              <div class="header__info-title">Для звонков по России</div>
+              <div class="header__info-text">+7 993 618‑67‑01</div>
+            </a>
+
+            <a href="mailto:lintu@lintu-coffee.ru" class="header__info-item">
+              <div class="header__info-title">Эл.почта</div>
+              <div class="header__info-text">lintu@lintu-coffee.ru</div>
+            </a>
+
+            <div class="header__info-item">
+              <div class="header__info-title">Мы принимаем звонки</div>
+              <div class="header__info-text">Ежедневно: c 10-00 до 18-00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__action">
+          <div class="header__search">
+            <a href="#" class="header__action-item js-header-search">
+              <div class="header__action-img">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/sprites/sprite.svg#search"></use>
+                </svg>
+              </div>
+              <div class="header__action-title">Поиск</div>
+            </a>
+
+            <div class="search">
+  <form action="#" class="form">
+    <label class="label">
+      <input type="search" placeholder="Поиск">
+    </label>
+  </form>
+  <div class="select2-block">
+    <select class="select2 js-select2 js-select2-search">
+      <option value="1" selected>По каталогу</option>
+      <option value="2">По статьям в блоге</option>
+    </select>
+  </div>
+</div>
+          </div>
+
+          <a href="#" class="header__action-item">
+            <div class="header__action-img">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprites/sprite.svg#favorites"></use>
+              </svg>
+            </div>
+            <div class="header__action-title">Избранное</div>
+          </a>
+
+          <a href="#" class="header__action-item">
+            <div class="header__action-img">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprites/sprite.svg#orders"></use>
+              </svg>
+            </div>
+            <div class="header__action-title">Заказы</div>
+          </a>
+
+          <a href="#" class="header__action-item">
+            <div class="header__action-img">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprites/sprite.svg#basket"></use>
+              </svg>
+            </div>
+            <div class="header__action-title">Корзина</div>
+          </a>
+
+          <a href="#" class="header__action-item header__action-item_login">
+            <div class="header__action-img">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprites/sprite.svg#user"></use>
+              </svg>
+            </div>
+            <div class="header__action-title">Войти</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="search">
+  <form action="#" class="form">
+    <label class="label">
+      <input type="search" placeholder="Поиск">
+    </label>
+  </form>
+  <div class="select2-block">
+    <select class="select2 js-select2 js-select2-search">
+      <option value="1" selected>По каталогу</option>
+      <option value="2">По статьям в блоге</option>
+    </select>
+  </div>
+</div>
+        <div class="burger js-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+  <section class="merch">
+  <div class="container">
+    <div class="merch__heading">
+      <h2 class="merch__title">Мерч</h2>
+      <div class="merch__filter"></div>
+    </div>
+    <div class="merch__content">
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="merch-card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <a href="#" class="merch-card__img">
+    <picture>
+      <source srcset="./img/content/merch-1.webp" type="image/webp">
+      <img src="./img/content/merch-1.jpg" width="429" height="310" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="merch-card__body">
+    <div class="merch-card__heading">
+      <a href="#" class="merch-card__title">Футболка "Розыск"</a>
+      <div class="merch-card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="merch-card__info">
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">крой</div>
+        <div class="merch-card__info-text">оверсайз</div>
+      </div>
+      <div class="merch-card__info-item">
+        <div class="merch-card__info-title">состав</div>
+        <div class="merch-card__info-text">100% хлопок 240г (плотный)</div>
+      </div>
+    </div>
+
+    <div class="merch-card__bottom">
+      <div class="merch-card__bottom-group">
+        <div class="select2-block">
+          <select class="select2 js-select2" data-placeholder="Размер">
+            <option></option>
+            <option value="1" selected>XL</option>
+            <option value="2">XXL</option>
+            <option value="3">XXXL</option>
+          </select>
+        </div>
+        <a href="#" class="merch-card__favorites js-merch-card-favorites">
+          <svg width="18" height="18">
+            <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="merch-card__bottom-group">
+        <div class="merch-card__pack">
+          <div class="merch-card__pack-item">
+            <div class="merch-card__pack-price">1500₽</div>
+            <div class="merch-card__pack-discount">-15%</div>
+          </div>
+        </div>
+        <div class="merch-card__block">
+          <a href="#" class="merch-card__button button js-merch-card-button">В корзину</a>
+          <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="merch__bottom">
+      <a href="#" class="merch__more button button_white">Показать еще</a>
+      <div class="pagination">
+  <a href="#" class="pagination__button pagination__button-prev pagination__button_disabled">
+    <svg width="24" height="24">
+      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+    </svg>
+  </a>
+  <div class="pagination__list">
+    <a href="#" class="pagination__item pagination__item_active">1</a>
+    <a href="#" class="pagination__item">2</a>
+    <a href="#" class="pagination__item pagination__item_empty">...</a>
+    <a href="#" class="pagination__item">20</a>
+  </div>
+  <a href="#" class="pagination__button pagination__button-next">
+    <svg width="24" height="24">
+      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+    </svg>
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+</main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="#" class="logo">
+        <svg width="88" height="34">
+          <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+        </svg>
+      </a>
+
+      <div class="footer__content">
+        <div class="footer__nav">
+          <div class="footer__nav-item">
+            <div class="footer__nav-title">Покупателям</div>
+            <ul class="footer__list">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Карта кофеен</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Бонусная система</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-item">
+            <div class="footer__nav-title">Компания</div>
+            <ul class="footer__list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Блог Lintu</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer__info">
+          <div class="footer__info-item">
+            <div class="footer__info-title">Для звонков по России</div>
+            <div class="footer__info-text">
+              <a href="tel:+79936186701" class="footer__info-link">+7 993 6186701</a>
+            </div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Эл.почта</div>
+            <div class="footer__info-text">
+              <a href="mailto:lintu@lintu-coffee.ru" class="footer__info-link">lintu@lintu-coffee.ru</a>
+            </div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Мы принимаем звонки</div>
+            <div class="footer__info-text">Ежедневно: c 10-00 до 18-00</div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Юридический адрес</div>
+            <div class="footer__info-text">ООО “Фролов групп”</div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-group">
+            <div class="social">
+  <a href="#" class="social__item">
+    <svg width="32" height="32">
+      <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+    </svg>
+  </a>
+  <a href="#" class="social__item">
+    <svg width="32" height="32">
+      <use xlink:href="./img/sprites/sprite.svg#instagram"></use>
+    </svg>
+  </a>
+</div>
+            <div class="app">
+  <a href="#" class="app__item">
+    <svg width="114" height="40">
+      <use xlink:href="./img/sprites/sprite.svg#app-store"></use>
+    </svg>
+  </a>
+  <a href="#" class="app__item">
+    <img src="./img/sprites/google-play.svg" alt="img">
+  </a>
+</div>
+          </div>
+
+          <div class="footer__bottom-group">
+            <a href="#" class="footer__developed">
+              Разработано в
+              <svg width="38" height="16">
+                <use xlink:href="./img/sprites/sprite.svg#developer"></use>
+              </svg>
+            </a>
+            <div class="footer__copy">© 2024 «Lintu coffee roasters»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    
+
+    <script src="./libs/jquery-3.5.1.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <!-- <script src="./libs/jquery.inputmask.min.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <script>
+      const $coffeeShopMap = $("#coffee-shop-map");
+
+      if ($coffeeShopMap.length > 0) ymaps.ready(init);
+
+      function init() {
+        var myMap = new ymaps.Map('coffee-shop-map', {
+          center: [55.751507, 37.618738],
+          zoom: 12,
+          controls: ['zoomControl']
+        }),
+
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark([55.723019, 37.560592], {
+          hintContent: `ул. Усачёва, 35, стр. 2`
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/content/map-mark.svg',
+          iconImageSize: [44, 44],
+          iconImageOffset: [-12, -44]
+        }),
+
+        myPlacemark2 = new ymaps.Placemark([55.728008, 37.643327], {
+          hintContent: `Летниковская улица, 2с4`
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/content/map-mark.svg',
+          iconImageSize: [44, 44],
+          iconImageOffset: [-12, -44]
+        });
+
+        myMap.geoObjects.add(myPlacemark)
+          .add(myPlacemark2),
+          myMap.behaviors.disable('scrollZoom');
+      }
+    </script>
+  </body>
+</html>

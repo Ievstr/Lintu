@@ -1,0 +1,147 @@
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a href="#" class="logo">
+        <svg width="88" height="34">
+          <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+        </svg>
+      </a>
+
+      <div class="footer__content">
+        <div class="footer__nav">
+          <div class="footer__nav-item">
+            <div class="footer__nav-title">Покупателям</div>
+            <ul class="footer__list">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Карта кофеен</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Бонусная система</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-item">
+            <div class="footer__nav-title">Компания</div>
+            <ul class="footer__list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Блог Lintu</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer__info">
+          <div class="footer__info-item">
+            <div class="footer__info-title">Для звонков по России</div>
+            <div class="footer__info-text">
+              <a href="tel:+79936186701" class="footer__info-link">+7 993 6186701</a>
+            </div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Эл.почта</div>
+            <div class="footer__info-text">
+              <a href="mailto:lintu@lintu-coffee.ru" class="footer__info-link">lintu@lintu-coffee.ru</a>
+            </div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Мы принимаем звонки</div>
+            <div class="footer__info-text">Ежедневно: c 10-00 до 18-00</div>
+          </div>
+
+          <div class="footer__info-item">
+            <div class="footer__info-title">Юридический адрес</div>
+            <div class="footer__info-text">ООО “Фролов групп”</div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-group">
+            <div class="social">
+  <a href="#" class="social__item">
+    <svg width="32" height="32">
+      <use xlink:href="./img/sprites/sprite.svg#telegram"></use>
+    </svg>
+  </a>
+  <a href="#" class="social__item">
+    <svg width="32" height="32">
+      <use xlink:href="./img/sprites/sprite.svg#instagram"></use>
+    </svg>
+  </a>
+</div>
+            <div class="app">
+  <a href="#" class="app__item">
+    <svg width="114" height="40">
+      <use xlink:href="./img/sprites/sprite.svg#app-store"></use>
+    </svg>
+  </a>
+  <a href="#" class="app__item">
+    <img src="./img/sprites/google-play.svg" alt="img">
+  </a>
+</div>
+          </div>
+
+          <div class="footer__bottom-group">
+            <a href="#" class="footer__developed">
+              Разработано в
+              <svg width="38" height="16">
+                <use xlink:href="./img/sprites/sprite.svg#developer"></use>
+              </svg>
+            </a>
+            <div class="footer__copy">© 2024 «Lintu coffee roasters»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    
+
+    <script src="./libs/jquery-3.5.1.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/select2/select2.min.js"></script>
+    <!-- <script src="./libs/jquery.inputmask.min.js"></script> -->
+    <script src="js/main.js"></script>
+
+    <script>
+      const $coffeeShopMap = $("#coffee-shop-map");
+
+      if ($coffeeShopMap.length > 0) ymaps.ready(init);
+
+      function init() {
+        var myMap = new ymaps.Map('coffee-shop-map', {
+          center: [55.751507, 37.618738],
+          zoom: 12,
+          controls: ['zoomControl']
+        }),
+
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark([55.723019, 37.560592], {
+          hintContent: `ул. Усачёва, 35, стр. 2`
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/content/map-mark.svg',
+          iconImageSize: [44, 44],
+          iconImageOffset: [-12, -44]
+        }),
+
+        myPlacemark2 = new ymaps.Placemark([55.728008, 37.643327], {
+          hintContent: `Летниковская улица, 2с4`
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: './img/content/map-mark.svg',
+          iconImageSize: [44, 44],
+          iconImageOffset: [-12, -44]
+        });
+
+        myMap.geoObjects.add(myPlacemark)
+          .add(myPlacemark2),
+          myMap.behaviors.disable('scrollZoom');
+      }
+    </script>
+  </body>
+</html>
