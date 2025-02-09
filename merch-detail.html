@@ -252,23 +252,28 @@
             <div class="header__action-title">Заказы</div>
           </a>
 
-          <a href="#" class="header__action-item">
+          <a href="#" class="header__action-item header__action-basket">
             <div class="header__action-img">
               <svg width="24" height="24">
                 <use xlink:href="./img/sprites/sprite.svg#basket"></use>
               </svg>
+              <div class="header__action-basket-count">7</div>
             </div>
             <div class="header__action-title">Корзина</div>
           </a>
 
-          <a href="#" class="header__action-item header__action-item_login">
-            <div class="header__action-img">
-              <svg width="24" height="24">
-                <use xlink:href="./img/sprites/sprite.svg#user"></use>
-              </svg>
-            </div>
-            <div class="header__action-title">Войти</div>
-          </a>
+          
+            <a href="#" class="header__action-item header__action-item_login">
+              <div class="header__action-img">
+                <svg width="24" height="24">
+                  <use xlink:href="./img/sprites/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="header__action-title">Войти</div>
+            </a>
+          
+
+          
         </div>
       </div>
 
@@ -402,6 +407,11 @@
 
             <div class="merch-card__bottom">
               <div class="merch-card__bottom-group">
+                <a href="#" class="merch-card__favorites js-merch-card-favorites">
+                  <svg width="18" height="18">
+                    <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+                  </svg>
+                </a>
                 <div class="select2-block">
                   <select class="select2 js-select2" data-placeholder="Размер">
                     <option></option>
@@ -410,11 +420,6 @@
                     <option value="3">XXXL</option>
                   </select>
                 </div>
-                <a href="#" class="merch-card__favorites js-merch-card-favorites">
-                  <svg width="18" height="18">
-                    <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-                  </svg>
-                </a>
               </div>
               <div class="merch-card__bottom-group">
                 <div class="merch-card__pack">
@@ -944,6 +949,11 @@
   </div>
   <div class="card__bottom">
     <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
       <div class="select2-block">
         <select class="select2 js-select2" data-placeholder="Помол">
           <option></option>
@@ -958,11 +968,6 @@
           <option value="9">для эспрессо тонко (крупный)</option>
         </select>
       </div>
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
     </div>
     <div class="card__bottom-group">
       <div class="card__pack">
@@ -1076,6 +1081,11 @@
   </div>
   <div class="card__bottom">
     <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
       <div class="select2-block">
         <select class="select2 js-select2" data-placeholder="Помол">
           <option></option>
@@ -1090,11 +1100,6 @@
           <option value="9">для эспрессо тонко (крупный)</option>
         </select>
       </div>
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
     </div>
     <div class="card__bottom-group">
       <div class="card__pack">
@@ -1208,6 +1213,11 @@
   </div>
   <div class="card__bottom">
     <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
       <div class="select2-block">
         <select class="select2 js-select2" data-placeholder="Помол">
           <option></option>
@@ -1222,11 +1232,6 @@
           <option value="9">для эспрессо тонко (крупный)</option>
         </select>
       </div>
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
     </div>
     <div class="card__bottom-group">
       <div class="card__pack">
@@ -1428,13 +1433,205 @@
     </div>
   </div>
 </footer>
-    
+    <div class="popup" id="popup">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__filter">
+				<a href="#" class="popup__filter-item js-popup-filter popup__filter-item_active" data-modal="1">Вход</a>
+				<a href="#" class="popup__filter-item js-popup-filter" data-modal="2">Регистрация</a>
+			</div>
+
+			<div class="popup__body">
+				<div class="popup__block js-popup-block popup__block_active" data-modal="1">
+					<div class="popup__login">
+						<form action="#" class="form">
+							<div class="form__content">
+								<label class="label">
+									<input type="tel" placeholder="+7 (___) ___ - __ - __" required>
+									<span class="label__title">Телефон</span>
+								</label>
+							</div>
+							<div class="form__bottom">
+								<button class="form__button button js-form-login-send">Выслать код</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="popup__verification">
+						<form action="#" class="form">
+							<div class="popup__verification-title">
+								Укажите код, который мы отправили вам на номер телефона <b>+7 (789) 132 - 12 - 12</b>
+							</div>
+							<div class="form__content">
+								<label class="label">
+									<input type="number" class="js-input-code" placeholder="_" required maxlength="1">
+								</label>
+								<label class="label">
+									<input type="number" class="js-input-code" placeholder="_" required maxlength="1">
+								</label>
+								<label class="label">
+									<input type="number" class="js-input-code" placeholder="_" required maxlength="1">
+								</label>
+								<label class="label">
+									<input type="number" class="js-input-code" placeholder="_" required maxlength="1">
+								</label>
+							</div>
+							<div class="form__bottom">
+								<button class="form__button button button_disabled">Подтвердить</button>
+								<div class="popup__verification-block">
+									<div class="popup__verification-timer">Повторная отправка через <span>00:59</span></div>
+									<a href="#" class="popup__verification-send">Отправить код</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="popup__block js-popup-block" data-modal="2">
+					<form action="#" class="form">
+						<div class="form__content">
+							<label class="label">
+								<input type="text" placeholder="Иван Иванов" required value="Иван Иванов">
+								<span class="label__title">Имя и Фамилия</span>
+							</label>
+							<label class="label">
+								<input type="tel" placeholder="+7 (___) ___ - __ - __" required>
+								<span class="label__title">Телефон</span>
+							</label>
+							<label class="label">
+								<input type="email" placeholder="Эл.почта" required value="ivanov@gmail.com">
+								<span class="label__title">Эл.почта</span>
+							</label>
+						</div>
+						<div class="form__bottom">
+							<button class="form__button button">Зарегистрироваться</button>
+							<div class="form__privacy">
+								<label class="label label_checkbox">
+									<input type="checkbox" class="visually-hidden" checked>
+									<span class="label__box"></span>
+									<span class="label__text">Согласен с условиями обработки данных, пользовательского соглашения и оферты</span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_sent" id="popup-sent">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__img">
+				<svg width="183" height="192">
+					<use xlink:href="./img/sprites/sprite.svg#modal-img"></use>
+				</svg>
+			</div>
+			<div class="popup__text">
+				<h3 class="popup__title">Заказ успешно оформлен!</h3>
+				<div class="popup__description">
+					<p>Теперь ваш заказ отображается в разделе “Заказы”.</p>
+				</div>
+			</div>
+			<a href="#" class="popup__button button js-popup-close">Хорошо</a>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_payment" id="popup-payment">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<h3 class="popup__title">Новая карта</h3>
+			<form action="#" class="form">
+				<div class="form__content">
+					<label class="label label_wide">
+						<input type="text" placeholder="Номер карты" required>
+						<span class="label__title">Номер карты</span>
+					</label>
+					<label class="label">
+						<input type="text" placeholder="ММ/ГГ" required>
+						<span class="label__title">ММ/ГГ</span>
+					</label>
+					<label class="label">
+						<input type="number" placeholder="CVV" required>
+						<span class="label__title">CVV</span>
+					</label>
+				</div>
+				<div class="form__bottom">
+					<div class="form__box">
+						<label class="label label_checkbox">
+							<input type="checkbox" class="visually-hidden" checked>
+							<span class="label__box"></span>
+							<span class="label__text">Сделать основной</span>
+						</label>
+					</div>
+					<div class="popup__error">Ошибка при доавлении карты</div>
+					<button class="form__button button">Добавить карту</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_review" id="popup-review">
+	<div class="popup__wrap">
+		<div class="popup__content">
+			<div class="popup__img">
+				<svg width="183" height="192">
+					<use xlink:href="./img/sprites/sprite.svg#modal-img"></use>
+				</svg>
+			</div>
+			<form action="#" class="form">
+				<div class="form__content">
+					<label class="label label_wide">
+						<input type="text" placeholder="Отзыв" required>
+						<span class="label__title">Ваш отзыв о товаре</span>
+					</label>
+				</div>
+				<div class="form__bottom">
+					<div class="popup__rating">
+						<div class="popup__rating-title">Оценка товара</div>
+						<div class="popup__rating-items">
+							<div class="popup__rating-item">
+								<svg width="38" height="38">
+									<use xlink:href="./img/sprites/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="popup__rating-item">
+								<svg width="38" height="38">
+									<use xlink:href="./img/sprites/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="popup__rating-item">
+								<svg width="38" height="38">
+									<use xlink:href="./img/sprites/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="popup__rating-item">
+								<svg width="38" height="38">
+									<use xlink:href="./img/sprites/sprite.svg#star"></use>
+								</svg>
+							</div>
+							<div class="popup__rating-item">
+								<svg width="38" height="38">
+									<use xlink:href="./img/sprites/sprite.svg#star-empty"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<button class="form__button button">Отправить отзыв</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
     
 
     <script src="./libs/jquery-3.5.1.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/select2/select2.min.js"></script>
-    <!-- <script src="./libs/jquery.inputmask.min.js"></script> -->
+    <script src="./libs/jquery.inputmask.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>

@@ -303,22 +303,532 @@
 
 
 <main class="main">
-  <section class="not-found">
+  <div class="breadcrumbs">
   <div class="container">
-    <div class="not-found__content">
-      <div class="not-found__img">
-        <svg width="157" height="213">
-          <use xlink:href="./img/sprites/sprite.svg#404"></use>
-        </svg>
-      </div>
-      <div class="not-found__text">
-        <h2 class="not-found__title">Ошибка 404</h2>
-        <div class="not-found__subtitle">Страница не найдена или находится в разработке</div>
-        <a href="#" class="not-found__button button">Вернуться на главную</a>
-      </div>
-    </div>
+    <ul class="breadcrumbs__list">
+      
+        
+          <li class="breadcrumbs__item">
+  <a href="#" class="breadcrumbs__link">Главная</a>
+</li>
+        
+          <li class="breadcrumbs__item">
+  <a href="#" class="breadcrumbs__link">Корзина</a>
+</li>
+        
+      
+    </ul>
   </div>
-</section>
+</div>
+  <div class="basket">
+  <div class="container">
+    <form action="#" class="form">
+      <div class="basket__content">
+        <div class="basket__body">
+          <div class="basket__items basket__box">
+            <div class="basket__item">
+              <div class="basket__item-img">
+                <picture>
+                  <source srcset="./img/content/product-1.webp" type="image/webp">
+                  <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                </picture>
+              </div>
+              <div class="basket__item-heading">
+                <div class="basket__item-text">
+                  <div class="basket__item-title">Колумбия супремо</div>
+                  <div class="basket__item-price">
+                    4500₽ <span class="basket__item-price-old">5000₽</span>
+                  </div>
+                </div>
+                <a href="#" class="basket__item-delete">
+                  <svg width="24" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#trash-can"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="basket__item-bottom">
+                <div class="select2-block">
+                  <select class="select2 js-select2" data-placeholder="Помол">
+                    <option></option>
+                    <option value="1" selected>для гейзерной кофеварки (средний)</option>
+                    <option value="2">для френч-пресса</option>
+                    <option value="3">в зернах</option>
+                    <option value="4">для капельной кофеварки</option>
+                    <option value="5">для пуровера</option>
+                    <option value="6">для эспрессо тонко (крупный)</option>
+                    <option value="7">для капельной кофеварки</option>
+                    <option value="8">для пуровера</option>
+                    <option value="9">для эспрессо тонко (крупный)</option>
+                  </select>
+                </div>
+                <div class="basket__item-bottom-group">
+                  <div class="select2-block">
+                    <select class="select2 js-select2" data-placeholder="Объем">
+                      <option></option>
+                      <option value="1" selected>250 г</option>
+                      <option value="2">500 г</option>
+                      <option value="3">1 кг</option>
+                    </select>
+                  </div>
+                  <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basket__item">
+              <div class="basket__item-img">
+                <picture>
+                  <source srcset="./img/content/product-1.webp" type="image/webp">
+                  <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                </picture>
+              </div>
+              <div class="basket__item-heading">
+                <div class="basket__item-text">
+                  <div class="basket__item-title">Колумбия супремо</div>
+                  <div class="basket__item-price">
+                    4500₽ <span class="basket__item-price-old">5000₽</span>
+                  </div>
+                </div>
+                <a href="#" class="basket__item-delete">
+                  <svg width="24" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#trash-can"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="basket__item-bottom">
+                <div class="select2-block">
+                  <select class="select2 js-select2" data-placeholder="Помол">
+                    <option></option>
+                    <option value="1" selected>для гейзерной кофеварки (средний)</option>
+                    <option value="2">для френч-пресса</option>
+                    <option value="3">в зернах</option>
+                    <option value="4">для капельной кофеварки</option>
+                    <option value="5">для пуровера</option>
+                    <option value="6">для эспрессо тонко (крупный)</option>
+                    <option value="7">для капельной кофеварки</option>
+                    <option value="8">для пуровера</option>
+                    <option value="9">для эспрессо тонко (крупный)</option>
+                  </select>
+                </div>
+                <div class="basket__item-bottom-group">
+                  <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="basket__item">
+              <div class="basket__item-img">
+                <picture>
+                  <source srcset="./img/content/product-1.webp" type="image/webp">
+                  <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                </picture>
+              </div>
+              <div class="basket__item-heading">
+                <div class="basket__item-text">
+                  <div class="basket__item-title">Колумбия супремо</div>
+                  <div class="basket__item-price">
+                    4500₽ <span class="basket__item-price-old">5000₽</span>
+                  </div>
+                </div>
+                <a href="#" class="basket__item-delete">
+                  <svg width="24" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#trash-can"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="basket__item-bottom">
+                <div class="basket__item-bottom-group">
+                  <div class="select2-block">
+                    <select class="select2 js-select2" data-placeholder="Объем">
+                      <option></option>
+                      <option value="1" selected>250 г</option>
+                      <option value="2">500 г</option>
+                      <option value="3">1 кг</option>
+                    </select>
+                  </div>
+                  <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basket__item">
+              <div class="basket__item-img">
+                <picture>
+                  <source srcset="./img/content/product-1.webp" type="image/webp">
+                  <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                </picture>
+              </div>
+              <div class="basket__item-heading">
+                <div class="basket__item-text">
+                  <div class="basket__item-title">Колумбия супремо</div>
+                  <div class="basket__item-price">
+                    4500₽ <span class="basket__item-price-old">5000₽</span>
+                  </div>
+                </div>
+                <a href="#" class="basket__item-delete">
+                  <svg width="24" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#trash-can"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="basket__item-bottom">
+                <div class="basket__item-bottom-group">
+                  <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="basket__item">
+              <div class="basket__item-img">
+                <picture>
+                  <source srcset="./img/content/product-1.webp" type="image/webp">
+                  <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                </picture>
+              </div>
+              <div class="basket__item-heading">
+                <div class="basket__item-text">
+                  <div class="basket__item-title">Колумбия супремо</div>
+                  <div class="basket__item-price">
+                    4500₽ <span class="basket__item-price-old">5000₽</span>
+                  </div>
+                </div>
+                <a href="#" class="basket__item-delete">
+                  <svg width="24" height="24">
+                    <use xlink:href="./img/sprites/sprite.svg#trash-can"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="basket__item-bottom">
+                <div class="select2-block">
+                  <select class="select2 js-select2" data-placeholder="Помол">
+                    <option></option>
+                    <option value="1" selected>для гейзерной кофеварки (средний)</option>
+                    <option value="2">для френч-пресса</option>
+                    <option value="3">в зернах</option>
+                    <option value="4">для капельной кофеварки</option>
+                    <option value="5">для пуровера</option>
+                    <option value="6">для эспрессо тонко (крупный)</option>
+                    <option value="7">для капельной кофеварки</option>
+                    <option value="8">для пуровера</option>
+                    <option value="9">для эспрессо тонко (крупный)</option>
+                  </select>
+                </div>
+                <div class="basket__item-bottom-group">
+                  <div class="select2-block">
+                    <select class="select2 js-select2" data-placeholder="Объем">
+                      <option></option>
+                      <option value="1" selected>250 г</option>
+                      <option value="2">500 г</option>
+                      <option value="3">1 кг</option>
+                    </select>
+                  </div>
+                  <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket__recipient basket__box">
+            <div class="basket__subtitle">Получатель</div>
+
+            <div class="basket__recipient-filter">
+              <label class="label label_checkbox label_radio">
+                <input type="radio" class="visually-hidden" name="recipient" value="individual" checked>
+                <span class="label__box"></span>
+                <span class="label__text">Физ. лицо</span>
+              </label>
+
+              <label class="label label_checkbox label_radio">
+                <input type="radio" class="visually-hidden" name="recipient" value="organization">
+                <span class="label__box"></span>
+                <span class="label__text">Организация</span>
+              </label>
+            </div>
+
+            <div class="basket__recipient-block basket__recipient-block_active" data-recipient="individual">
+              <div class="basket__info">
+                <label class="label">
+                  <input type="text" placeholder="Иван Иванов" required value="Иван Иванов">
+                  <span class="label__title">Имя и Фамилия</span>
+                </label>
+                <label class="label">
+                  <input type="tel" placeholder="+7 (___) ___ - __ - __" required>
+                  <span class="label__title">Телефон</span>
+                </label>
+                <label class="label">
+                  <input type="email" placeholder="Эл.почта" required value="ivanov@gmail.com">
+                  <span class="label__title">Эл.почта</span>
+                </label>
+                <label class="label label_wide">
+                  <textarea placeholder="Ваш комментарий"></textarea>
+                  <span class="label__title">Комментарий к заказу</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="basket__recipient-block" data-recipient="organization">
+              <div class="basket__info">
+                <label class="label">
+                  <input type="text" placeholder="Иван Иванов" required value="Иван Иванов">
+                  <span class="label__title">Имя и Фамилия</span>
+                </label>
+                <label class="label">
+                  <input type="tel" placeholder="+7 (___) ___ - __ - __" required>
+                  <span class="label__title">Телефон</span>
+                </label>
+                <label class="label">
+                  <input type="email" placeholder="Эл.почта" required value="ivanov@gmail.com">
+                  <span class="label__title">Эл.почта</span>
+                </label>
+                <label class="label">
+                  <input type="text" placeholder="Организация" required>
+                  <span class="label__title">Наименование организации</span>
+                </label>
+                <label class="label">
+                  <input type="text" placeholder="Укажите КПП" required>
+                  <span class="label__title">Укажите КПП</span>
+                </label>
+                <label class="label">
+                  <input type="text" placeholder="Укажите ИНН" required>
+                  <span class="label__title">Укажите ИНН</span>
+                </label>
+                <label class="label label_wide">
+                  <textarea placeholder="Ваш комментарий"></textarea>
+                  <span class="label__title">Комментарий к заказу</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket__delivery basket__box">
+            <div class="basket__subtitle">Доставка</div>
+            <div class="basket__delivery-filter">
+              <label class="label label_checkbox label_radio">
+                <input type="radio" class="visually-hidden" name="delivery" checked>
+                <span class="label__box"></span>
+                <span class="label__text">
+                  Самовывоз
+                  <span class="label__description">г. Москва, ул.Лентниковская 3, к.2</span>
+                </span>
+              </label>
+
+              <label class="label label_checkbox label_radio">
+                <input type="radio" class="visually-hidden" name="delivery" value="courier">
+                <span class="label__box"></span>
+                <span class="label__text">
+                  Доставка курьером (в пределах МКАД)
+                  <span class="label__description">3-7 раб. дней / Бесплатно от 1500₽</span>
+                </span>
+              </label>
+
+              <div class="basket__address">
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="address" checked>
+                  <span class="label__box"></span>
+                  <span class="label__text">пер. Пушкина</span>
+                </label>
+
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="address">
+                  <span class="label__box"></span>
+                  <span class="label__text">Летниковская 3, к.2</span>
+                </label>
+
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="address" value="new">
+                  <span class="label__box"></span>
+                  <span class="label__text">Новый адрес</span>
+                </label>
+
+                <div class="basket__address-info">
+                  <label class="label">
+                    <input type="text" placeholder="Город" required value="Москва">
+                    <span class="label__title">Город</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Улица" required value="пер. Пушкина">
+                    <span class="label__title">Улица</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Дом" required value="1">
+                    <span class="label__title">Дом</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите корпус" required>
+                    <span class="label__title">Корпус</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите подъезд" required>
+                    <span class="label__title">Подъезд</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите квартиру" required>
+                    <span class="label__title">Квартира</span>
+                  </label>
+                </div>
+              </div>
+
+              <label class="label label_checkbox label_radio">
+                <input type="radio" class="visually-hidden" name="delivery">
+                <span class="label__box"></span>
+                <span class="label__text">
+                  СDЕК
+                  <span class="label__description">250₽ 3-7 раб. дней</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="basket__payment basket__box">
+            <div class="basket__subtitle">Способ оплаты</div>
+
+            <div class="basket__payment-block basket__payment-block_active" data-recipient="individual">
+              <div class="basket__payment-filter">
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="payment" checked>
+                  <span class="label__box"></span>
+                  <span class="label__text">Картой онлайн</span>
+                </label>
+
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="payment">
+                  <span class="label__box"></span>
+                  <span class="label__text">СБП</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="basket__payment-block" data-recipient="organization">
+              <div class="basket__payment-filter">
+                <label class="label label_checkbox label_radio">
+                  <input type="radio" class="visually-hidden" name="payment-organization" checked>
+                  <span class="label__box"></span>
+                  <span class="label__text">Оплата по счету для юр.лиц</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="basket__deposit">
+              <label class="label label_checkbox">
+                <input type="checkbox" class="visually-hidden" checked>
+                <span class="label__box"></span>
+                <span class="label__text">Списать депозит 1500₽</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="basket__order basket__box">
+          <div class="basket__order-heading">
+            <div class="basket__order-title">К оплате</div>
+            <div class="basket__order-price">14 100₽</div>
+          </div>
+
+          <div class="basket__order-info">
+            <div class="basket__order-info-item">
+              <div class="basket__order-info-title">Товаров</div>
+              <div class="basket__order-info-value">9</div>
+            </div>
+            <div class="basket__order-info-item">
+              <div class="basket__order-info-title">Сумма заказа</div>
+              <div class="basket__order-info-value">15 100₽</div>
+            </div>
+            <div class="basket__order-info-item">
+              <div class="basket__order-info-title">Скидка</div>
+              <div class="basket__order-info-value">1000₽</div>
+            </div>
+            <div class="basket__order-info-item">
+              <div class="basket__order-info-title">Списание депозита</div>
+              <div class="basket__order-info-value">0₽</div>
+            </div>
+          </div>
+
+          <div class="basket__promo">
+            <label class="label">
+              <input type="text" placeholder="Введите промокод">
+            </label>
+            <div class="select2-block">
+              <select class="select2 js-select2 js-select2-promo">
+                <option value="1" selected>Промокод</option>
+                <option value="2">Сертификат</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="form__button basket__button button">Оформить заказ</button>
+
+          <div class="form__privacy">
+            <label class="label label_checkbox">
+              <input type="checkbox" class="visually-hidden" checked>
+              <span class="label__box"></span>
+              <span class="label__text">Согласен с условиями обработки данных, пользовательского соглашения и&nbsp;оферты</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
 </main>
 
     <footer class="footer">

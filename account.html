@@ -263,16 +263,20 @@
           </a>
 
           
-            <a href="#" class="header__action-item header__action-item_login">
-              <div class="header__action-img">
-                <svg width="24" height="24">
-                  <use xlink:href="./img/sprites/sprite.svg#user"></use>
-                </svg>
-              </div>
-              <div class="header__action-title">Войти</div>
-            </a>
-          
 
+          
+            <a href="#" class="header__profile">
+              <div class="header__profile-name">Иван И.</div>
+              <div class="header__profile-info">
+                <div class="header__profile-bonus">
+                  <svg width="15" height="12">
+                    <use xlink:href="./img/sprites/sprite.svg#paw"></use>
+                  </svg>
+                  <span>0</span>
+                </div>
+                <div class="header__profile-balance">1500₽</div>
+              </div>
+            </a>
           
         </div>
       </div>
@@ -303,76 +307,1488 @@
 
 
 <main class="main">
-  <section class="hero">
+  <section class="account">
   <div class="container">
-    <div class="hero__content">
-      <a href="#" class="hero__item hero__item_wide">
-        <div class="hero__item-img">
-          <picture>
-            <source srcset="./img/content/hero-1.webp" type="image/webp">
-            <img src="./img/content/hero-1.jpg" width="652" height="478" alt="img" loading="lazy">
-          </picture>
-        </div>
-        <h2 class="hero__item-title">Кофе для сов и жаворонков</h2>
-      </a>
+    <h1 class="account__title">Личный кабинет</h1>
+    <div class="tab">
+      <div class="tab__list">
+        <a href="#" class="tab__item js-tab-item tab__item_active" data-tab="1">Личные данные</a>
+        <a href="#" class="tab__item js-tab-item" data-tab="2">История заказов</a>
+        <a href="#" class="tab__item js-tab-item" data-tab="3">Лояльность</a>
+        <a href="#" class="tab__item js-tab-item" data-tab="4">Депозит</a>
+        <a href="#" class="tab__item js-tab-item tab__item_wide" data-tab="5">Избранное</a>
+      </div>
+    </div>
+    <div class="account__body">
+      <div class="account__content">
+        <div class="account__block tab-content js-tab-content tab-content_active" data-tab="1">
+          <div class="account__personal">
+            <div class="account__box">
+              <h3 class="account__subtitle">Получатель</h3>
+              <div class="account__info">
+                <label class="label">
+                  <input type="text" placeholder="Иван Иванов" required value="Иван Иванов">
+                  <span class="label__title">Имя и Фамилия</span>
+                </label>
+                <label class="label">
+                  <input type="tel" placeholder="+7 (___) ___ - __ - __" required>
+                  <span class="label__title">Телефон</span>
+                </label>
+                <label class="label">
+                  <input type="email" placeholder="Эл.почта" required value="ivanov@gmail.com">
+                  <span class="label__title">Эл.почта</span>
+                </label>
+              </div>
+              <div class="account__buttons">
+                <a href="#" class="account__button button button_grey">Редактировать данные</a>
+                <a href="#" class="account__button button js-organization-add">Добавить организацию</a>
+              </div>
+            </div>
 
-      <a href="#" class="hero__item">
-        <div class="hero__item-img">
-          <picture>
-            <source srcset="./img/content/hero-2.webp" type="image/webp">
-            <img src="./img/content/hero-2.jpg" width="318" height="231" alt="img" loading="lazy">
-          </picture>
-        </div>
-        <h3 class="hero__item-title">Для эспрессо (10)</h3>
-      </a>
+            <div class="account__box account__organization js-organization">
+              <h3 class="account__subtitle">Организация</h3>
+              <div class="account__info">
+                <label class="label">
+                  <input type="text" placeholder="Наименование организации" value="Дринкит">
+                  <span class="label__title">Наименование организации</span>
+                </label>
+                <label class="label">
+                  <input type="text" placeholder="Укажите КПП">
+                  <span class="label__title">КПП</span>
+                </label>
+                <label class="label">
+                  <input type="text" placeholder="Укажите ИНН">
+                  <span class="label__title">ИНН</span>
+                </label>
+              </div>
+              <div class="account__buttons">
+                <a href="#" class="account__button button">Сохранить</a>
+                <a href="#" class="account__button button button_grey js-organization-cancel">Отмена</a>
+              </div>
+            </div>
 
-      <a href="#" class="hero__item">
-        <div class="hero__item-img">
-          <picture>
-            <source srcset="./img/content/hero-3.webp" type="image/webp">
-            <img src="./img/content/hero-3.jpg" width="318" height="231" alt="img" loading="lazy">
-          </picture>
-        </div>
-        <h3 class="hero__item-title">Для фильтра (8)</h3>
-      </a>
+            <div class="account__box">
+              <h3 class="account__subtitle">Адреса</h3>
+              <div class="account__address">
+                <div class="account__address-item">
+                  <!-- <div class="account__address-suptitle">Основной</div> -->
+                  <div class="account__address-title">пер. Пушкина</div>
+                </div>
+                <div class="account__address-item">
+                  <div class="account__address-title">Летниковская 3, к.2</div>
+                </div>
+                <a class="account__address-item js-address-add">
+                  <div class="account__address-img">
+                    <svg width="24" height="24">
+                      <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                  <div class="account__address-title">Новый адрес</div>
+                </a>
+              </div>
 
-      <a href="#" class="hero__item">
-        <div class="hero__item-img">
-          <picture>
-            <source srcset="./img/content/hero-2.webp" type="image/webp">
-            <img src="./img/content/hero-2.jpg" width="318" height="231" alt="img" loading="lazy">
-          </picture>
-        </div>
-        <h3 class="hero__item-title">Для турки (20)</h3>
-      </a>
+              <div class="account__address-new js-address">
+                <div class="account__info">
+                  <label class="label">
+                    <input type="text" placeholder="Город" value="Москва">
+                    <span class="label__title">Город</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Улица" value="пер. Пушкина">
+                    <span class="label__title">Улица</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Дом" value="1">
+                    <span class="label__title">Дом</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите корпус">
+                    <span class="label__title">Корпус</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите подъезд">
+                    <span class="label__title">Подъезд</span>
+                  </label>
+                  <label class="label">
+                    <input type="text" placeholder="Укажите квартиру">
+                    <span class="label__title">Квартира</span>
+                  </label>
+                </div>
+                <div class="account__buttons">
+                  <a href="#" class="account__button button">Сохранить</a>
+                  <a href="#" class="account__button button button_grey js-address-cancel">Отмена</a>
+                </div>
+              </div>
+            </div>
 
-      <a href="#" class="hero__item">
-        <div class="hero__item-img">
-          <picture>
-            <source srcset="./img/content/hero-4.webp" type="image/webp">
-            <img src="./img/content/hero-4.jpg" width="318" height="231" alt="img" loading="lazy">
-          </picture>
+            <div class="account__box">
+              <h3 class="account__subtitle">Карты</h3>
+              <div class="account__payment">
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+              </div>
+              <div class="account__buttons">
+                <a href="#" class="account__button button">Добавить карту</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 class="hero__item-title">Мерч (3)</h3>
-      </a>
+
+        <div class="account__block tab-content js-tab-content" data-tab="2">
+          <div class="tab">
+            <div class="tab__list">
+              <a href="#" class="tab__item js-tab-orders-item" data-tab="orders-1">Активные</a>
+              <a href="#" class="tab__item js-tab-orders-item tab__item_active" data-tab="orders-2">Выполненные</a>
+              <a href="#" class="tab__item js-tab-orders-item" data-tab="orders-3">Отмененные</a>
+            </div>
+          </div>
+
+          <div class="account__block tab-content js-tab-orders-content" data-tab="orders-1">
+            <div class="account__orders">
+              <div class="account__orders-item">
+                <div class="account__orders-item-heading">
+                  <div class="account__orders-item-info">
+                    <div class="account__orders-item-title">Заказ №1482520</div>
+                    <div class="account__orders-item-date">12.12.2024</div>
+                  </div>
+                  <div class="account__orders-item-labels">
+                    <div class="account__orders-item-label">г. Москва, ул.Лентниковская 3, к.2</div>
+                    <div class="account__orders-item-label">15 000₽</div>
+                    <div class="account__orders-item-label">2 товара</div>
+                  </div>
+                  <a href="#" class="account__orders-item-more js-orders-more">
+                    Подробнее
+                    <svg width="16" height="16">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="account__orders-item-dropdown">
+                  <div class="account__orders-products">
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">для гейзерной кофеварки (средний)</div>
+                          <div class="account__orders-product-label">250 г</div>
+                          <div class="account__orders-product-label">3 уп</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review account__orders-product-review_filled">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">1 шт</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="account__orders-details">
+                    <div class="account__orders-details-title">Детали заказа</div>
+                    <div class="account__orders-details-content">
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Имя</div>
+                        <div class="account__orders-details-item-text">Иван Иванов</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Кол-во товаров</div>
+                        <div class="account__orders-details-item-text">2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Тип доставки</div>
+                        <div class="account__orders-details-item-text">Доставка курьером (в пределах МКАД)</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Адрес доставки</div>
+                        <div class="account__orders-details-item-text">г. Москва, ул.Лентниковская 3, к.2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплата</div>
+                        <div class="account__orders-details-item-text">СБП</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Стоимость заказа</div>
+                        <div class="account__orders-details-item-text">4500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Скидка</div>
+                        <div class="account__orders-details-item-text">100₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплачено депозитом</div>
+                        <div class="account__orders-details-item-text">500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Комментарий к заказу:</div>
+                        <div class="account__orders-details-item-text">Какой-то комментарий...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="account__block tab-content js-tab-orders-content tab-content_active" data-tab="orders-2">
+            <div class="account__orders">
+              <div class="account__orders-item">
+                <div class="account__orders-item-heading">
+                  <div class="account__orders-item-info">
+                    <div class="account__orders-item-title">Заказ №1482520</div>
+                    <div class="account__orders-item-date">12.12.2024</div>
+                  </div>
+                  <div class="account__orders-item-labels">
+                    <div class="account__orders-item-label">г. Москва, ул.Лентниковская 3, к.2</div>
+                    <div class="account__orders-item-label">15 000₽</div>
+                    <div class="account__orders-item-label">2 товара</div>
+                  </div>
+                  <a href="#" class="account__orders-item-more js-orders-more">
+                    Подробнее
+                    <svg width="16" height="16">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="account__orders-item-dropdown">
+                  <div class="account__orders-products">
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">для гейзерной кофеварки (средний)</div>
+                          <div class="account__orders-product-label">250 г</div>
+                          <div class="account__orders-product-label">3 уп</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review account__orders-product-review_filled">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">1 шт</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="account__orders-details">
+                    <div class="account__orders-details-title">Детали заказа</div>
+                    <div class="account__orders-details-content">
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Имя</div>
+                        <div class="account__orders-details-item-text">Иван Иванов</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Кол-во товаров</div>
+                        <div class="account__orders-details-item-text">2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Тип доставки</div>
+                        <div class="account__orders-details-item-text">Доставка курьером (в пределах МКАД)</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Адрес доставки</div>
+                        <div class="account__orders-details-item-text">г. Москва, ул.Лентниковская 3, к.2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплата</div>
+                        <div class="account__orders-details-item-text">СБП</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Стоимость заказа</div>
+                        <div class="account__orders-details-item-text">4500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Скидка</div>
+                        <div class="account__orders-details-item-text">100₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплачено депозитом</div>
+                        <div class="account__orders-details-item-text">500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Комментарий к заказу:</div>
+                        <div class="account__orders-details-item-text">Какой-то комментарий...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="account__orders-item">
+                <div class="account__orders-item-heading">
+                  <div class="account__orders-item-info">
+                    <div class="account__orders-item-title">Заказ №1482520</div>
+                    <div class="account__orders-item-date">12.12.2024</div>
+                  </div>
+                  <div class="account__orders-item-labels">
+                    <div class="account__orders-item-label">г. Москва, ул.Лентниковская 3, к.2</div>
+                    <div class="account__orders-item-label">15 000₽</div>
+                    <div class="account__orders-item-label">2 товара</div>
+                  </div>
+                  <a href="#" class="account__orders-item-more js-orders-more">
+                    Подробнее
+                    <svg width="16" height="16">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="account__orders-item-dropdown">
+                  <div class="account__orders-products">
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">для гейзерной кофеварки (средний)</div>
+                          <div class="account__orders-product-label">250 г</div>
+                          <div class="account__orders-product-label">3 уп</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review account__orders-product-review_filled">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">1 шт</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="account__orders-details">
+                    <div class="account__orders-details-title">Детали заказа</div>
+                    <div class="account__orders-details-content">
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Имя</div>
+                        <div class="account__orders-details-item-text">Иван Иванов</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Кол-во товаров</div>
+                        <div class="account__orders-details-item-text">2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Тип доставки</div>
+                        <div class="account__orders-details-item-text">Доставка курьером (в пределах МКАД)</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Адрес доставки</div>
+                        <div class="account__orders-details-item-text">г. Москва, ул.Лентниковская 3, к.2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплата</div>
+                        <div class="account__orders-details-item-text">СБП</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Стоимость заказа</div>
+                        <div class="account__orders-details-item-text">4500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Скидка</div>
+                        <div class="account__orders-details-item-text">100₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплачено депозитом</div>
+                        <div class="account__orders-details-item-text">500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Комментарий к заказу:</div>
+                        <div class="account__orders-details-item-text">Какой-то комментарий...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="account__block tab-content js-tab-orders-content" data-tab="orders-3">
+            <div class="account__orders">
+              <div class="account__orders-item">
+                <div class="account__orders-item-heading">
+                  <div class="account__orders-item-info">
+                    <div class="account__orders-item-title">Заказ №1482520</div>
+                    <div class="account__orders-item-date">12.12.2024</div>
+                  </div>
+                  <div class="account__orders-item-labels">
+                    <div class="account__orders-item-label">г. Москва, ул.Лентниковская 3, к.2</div>
+                    <div class="account__orders-item-label">15 000₽</div>
+                    <div class="account__orders-item-label">2 товара</div>
+                  </div>
+                  <a href="#" class="account__orders-item-more js-orders-more">
+                    Подробнее
+                    <svg width="16" height="16">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="account__orders-item-dropdown">
+                  <div class="account__orders-products">
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">для гейзерной кофеварки (средний)</div>
+                          <div class="account__orders-product-label">250 г</div>
+                          <div class="account__orders-product-label">3 уп</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review account__orders-product-review_filled">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+
+                    <div class="account__orders-product">
+                      <div class="account__orders-product-img">
+                        <picture>
+                          <source srcset="./img/content/product-1.webp" type="image/webp">
+                          <img src="./img/content/product-1.jpg" width="80" height="82" alt="img" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="account__orders-product-text">
+                        <div class="account__orders-product-title">Колумбия супремо</div>
+                        <div class="account__orders-product-labels">
+                          <div class="account__orders-product-label">4500₽</div>
+                          <div class="account__orders-product-label">1 шт</div>
+                        </div>
+                      </div>
+                      <a href="#" class="account__orders-product-review">
+                        <svg width="20" height="20">
+                          <use xlink:href="./img/sprites/sprite.svg#star-2"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="account__orders-details">
+                    <div class="account__orders-details-title">Детали заказа</div>
+                    <div class="account__orders-details-content">
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Имя</div>
+                        <div class="account__orders-details-item-text">Иван Иванов</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Кол-во товаров</div>
+                        <div class="account__orders-details-item-text">2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Тип доставки</div>
+                        <div class="account__orders-details-item-text">Доставка курьером (в пределах МКАД)</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Адрес доставки</div>
+                        <div class="account__orders-details-item-text">г. Москва, ул.Лентниковская 3, к.2</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплата</div>
+                        <div class="account__orders-details-item-text">СБП</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Стоимость заказа</div>
+                        <div class="account__orders-details-item-text">4500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Скидка</div>
+                        <div class="account__orders-details-item-text">100₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Оплачено депозитом</div>
+                        <div class="account__orders-details-item-text">500₽</div>
+                      </div>
+
+                      <div class="account__orders-details-item">
+                        <div class="account__orders-details-item-title">Комментарий к заказу:</div>
+                        <div class="account__orders-details-item-text">Какой-то комментарий...</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="account__block tab-content js-tab-content" data-tab="3">
+          <div class="account__bonus bonus">
+            <div class="account__box">
+              <h3 class="account__subtitle">Ваша скидка</h3>
+              <div class="account__bonus-steps">
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">0%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="100"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow">
+                      <svg width="35" height="75">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">100 баллов</div>
+                </div>
+
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">2%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="50"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow account__bonus-step-arrow_up">
+                      <svg width="50" height="64">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">от 2000₽</div>
+                </div>
+
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">4%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="0"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow">
+                      <svg width="35" height="75">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">от 4000₽</div>
+                </div>
+
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">6%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="0"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow account__bonus-step-arrow_up">
+                      <svg width="50" height="64">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">от 8000₽</div>
+                </div>
+
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">8%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="0"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow">
+                      <svg width="35" height="75">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">от 15000₽</div>
+                </div>
+
+                <div class="account__bonus-step">
+                  <div class="account__bonus-step-block">
+                    <div class="account__bonus-step-circle">
+                      <div class="account__bonus-step-number">10%</div>
+                      <div class="account__bonus-step-progress js-bonus-progress" data-progress="0"></div>
+                    </div>
+                    <div class="account__bonus-step-arrow account__bonus-step-arrow_up">
+                      <svg width="50" height="64">
+                        <use xlink:href="./img/sprites/sprite.svg#step-arrow-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="account__bonus-step-title">от 20000₽</div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="account__box">
+              <h3 class="account__subtitle">Условия</h3>
+              <ol class="bonus__list">
+                <li class="bonus__item">
+                  <div class="bonus__item-number"></div>
+                  <div class="bonus__item-text">совершайте покупки и увеличивайте % кешбека</div>
+                </li>
+                <li class="bonus__item">
+                  <div class="bonus__item-number"></div>
+                  <div class="bonus__item-text">% кешбека обновляется при выполнении условий или по истечению 60 дней</div>
+                </li>
+                <li class="bonus__item">
+                  <div class="bonus__item-number"></div>
+                  <div class="bonus__item-text">оплачивайте бонусами до 25% покупки</div>
+                </li>
+                <li class="bonus__item">
+                  <div class="bonus__item-number"></div>
+                  <div class="bonus__item-text">получайте приветственные 100 бонусов и 15% скидки в день рождения (по паспорту)</div>
+                </li>
+                <li class="bonus__item">
+                  <div class="bonus__item-number"></div>
+                  <div class="bonus__item-text">1 бонус = 1 рубль. Бонусы сгорают через 365 дней</div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="account__block tab-content js-tab-content" data-tab="4">
+          <div class="account__deposit">
+            <div class="account__box">
+              <h3 class="account__subtitle">Текущий баланс: <span>1500₽</span></h3>
+              <div class="account__payment">
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+                <div class="account__payment-item">
+                  <div class="account__payment-suptitle">МИР</div>
+                  <div class="account__payment-title">*1234</div>
+                </div>
+              </div>
+
+              <a href="#" class="account__button button account__deposit-button">Пополнить баланс депозита</a>
+            </div>
+
+            <div class="account__box">
+              <h3 class="account__subtitle">История начислений</h3>
+              <div class="account__history">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                    <tr>
+                      <td>12.12.2024</td>
+                      <td>*1234</td>
+                      <td>МИР</td>
+                      <td>1500₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="account__block tab-content js-tab-content" data-tab="5">
+          <div class="account__cards">
+            <div class="card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <div class="card__heading">
+    <div class="card__heading-group">
+      <a href="#" class="card__title">Колумбия супремо</a>
+      <div class="card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card__heading-group">
+      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
+      <div class="card__sort">Speciality blend</div>
     </div>
   </div>
-</section>
-  <section class="pre-catalog">
-  <div class="container">
-    
-      <a href="#" class="link pre-catalog__link">
-  <span>Хит</span>
-  <svg width="32" height="32">
-    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-  </svg>
-</a>
-    
-    
-    <div class="pre-catalog__content">
-      <div class="swiper pre-catalog__slider js-pre-catalog-slider">
-        <div class="swiper-wrapper pre-catalog__slider-wrapper">
-          <div class="swiper-slide pre-catalog__item">
+  <a href="#" class="card__img">
+    <picture>
+      <source srcset="./img/content/card-1.webp" type="image/webp">
+      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="card__text">
+    <div class="card__description">
+      <p>Красное яблоко, косточковые фрукты, какао</p>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item">
+        <div class="card__info-title">кислотность</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">сладость</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">горечь</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">обжарка</div>
+        <div class="card__info-subtitle">средняя</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
+      <div class="select2-block">
+        <select class="select2 js-select2" data-placeholder="Помол">
+          <option></option>
+          <option value="1" selected>для гейзерной кофеварки (средний)</option>
+          <option value="2">для френч-пресса</option>
+          <option value="3">в зернах</option>
+          <option value="4">для капельной кофеварки</option>
+          <option value="5">для пуровера</option>
+          <option value="6">для эспрессо тонко (крупный)</option>
+          <option value="7">для капельной кофеварки</option>
+          <option value="8">для пуровера</option>
+          <option value="9">для эспрессо тонко (крупный)</option>
+        </select>
+      </div>
+    </div>
+    <div class="card__bottom-group">
+      <div class="card__pack">
+        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">250 г</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">600₽</div>
+        </a>
+
+        <a href="#" class="card__pack-item js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">1 кг</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">1500₽</div>
+        </a>
+      </div>
+      <div class="card__block">
+        <a href="#" class="card__button button js-card-button">В корзину</a>
+        <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <div class="card__heading">
+    <div class="card__heading-group">
+      <a href="#" class="card__title">Колумбия супремо</a>
+      <div class="card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card__heading-group">
+      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
+      <div class="card__sort">Speciality blend</div>
+    </div>
+  </div>
+  <a href="#" class="card__img">
+    <picture>
+      <source srcset="./img/content/card-1.webp" type="image/webp">
+      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="card__text">
+    <div class="card__description">
+      <p>Красное яблоко, косточковые фрукты, какао</p>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item">
+        <div class="card__info-title">кислотность</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">сладость</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">горечь</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">обжарка</div>
+        <div class="card__info-subtitle">средняя</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
+      <div class="select2-block">
+        <select class="select2 js-select2" data-placeholder="Помол">
+          <option></option>
+          <option value="1" selected>для гейзерной кофеварки (средний)</option>
+          <option value="2">для френч-пресса</option>
+          <option value="3">в зернах</option>
+          <option value="4">для капельной кофеварки</option>
+          <option value="5">для пуровера</option>
+          <option value="6">для эспрессо тонко (крупный)</option>
+          <option value="7">для капельной кофеварки</option>
+          <option value="8">для пуровера</option>
+          <option value="9">для эспрессо тонко (крупный)</option>
+        </select>
+      </div>
+    </div>
+    <div class="card__bottom-group">
+      <div class="card__pack">
+        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">250 г</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">600₽</div>
+        </a>
+
+        <a href="#" class="card__pack-item js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">1 кг</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">1500₽</div>
+        </a>
+      </div>
+      <div class="card__block">
+        <a href="#" class="card__button button js-card-button">В корзину</a>
+        <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <div class="card__heading">
+    <div class="card__heading-group">
+      <a href="#" class="card__title">Колумбия супремо</a>
+      <div class="card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card__heading-group">
+      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
+      <div class="card__sort">Speciality blend</div>
+    </div>
+  </div>
+  <a href="#" class="card__img">
+    <picture>
+      <source srcset="./img/content/card-1.webp" type="image/webp">
+      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="card__text">
+    <div class="card__description">
+      <p>Красное яблоко, косточковые фрукты, какао</p>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item">
+        <div class="card__info-title">кислотность</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">сладость</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">горечь</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">обжарка</div>
+        <div class="card__info-subtitle">средняя</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
+      <div class="select2-block">
+        <select class="select2 js-select2" data-placeholder="Помол">
+          <option></option>
+          <option value="1" selected>для гейзерной кофеварки (средний)</option>
+          <option value="2">для френч-пресса</option>
+          <option value="3">в зернах</option>
+          <option value="4">для капельной кофеварки</option>
+          <option value="5">для пуровера</option>
+          <option value="6">для эспрессо тонко (крупный)</option>
+          <option value="7">для капельной кофеварки</option>
+          <option value="8">для пуровера</option>
+          <option value="9">для эспрессо тонко (крупный)</option>
+        </select>
+      </div>
+    </div>
+    <div class="card__bottom-group">
+      <div class="card__pack">
+        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">250 г</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">600₽</div>
+        </a>
+
+        <a href="#" class="card__pack-item js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">1 кг</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">1500₽</div>
+        </a>
+      </div>
+      <div class="card__block">
+        <a href="#" class="card__button button js-card-button">В корзину</a>
+        <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <div class="card__heading">
+    <div class="card__heading-group">
+      <a href="#" class="card__title">Колумбия супремо</a>
+      <div class="card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card__heading-group">
+      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
+      <div class="card__sort">Speciality blend</div>
+    </div>
+  </div>
+  <a href="#" class="card__img">
+    <picture>
+      <source srcset="./img/content/card-1.webp" type="image/webp">
+      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="card__text">
+    <div class="card__description">
+      <p>Красное яблоко, косточковые фрукты, какао</p>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item">
+        <div class="card__info-title">кислотность</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">сладость</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">горечь</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">обжарка</div>
+        <div class="card__info-subtitle">средняя</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
+      <div class="select2-block">
+        <select class="select2 js-select2" data-placeholder="Помол">
+          <option></option>
+          <option value="1" selected>для гейзерной кофеварки (средний)</option>
+          <option value="2">для френч-пресса</option>
+          <option value="3">в зернах</option>
+          <option value="4">для капельной кофеварки</option>
+          <option value="5">для пуровера</option>
+          <option value="6">для эспрессо тонко (крупный)</option>
+          <option value="7">для капельной кофеварки</option>
+          <option value="8">для пуровера</option>
+          <option value="9">для эспрессо тонко (крупный)</option>
+        </select>
+      </div>
+    </div>
+    <div class="card__bottom-group">
+      <div class="card__pack">
+        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">250 г</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">600₽</div>
+        </a>
+
+        <a href="#" class="card__pack-item js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">1 кг</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">1500₽</div>
+        </a>
+      </div>
+      <div class="card__block">
+        <a href="#" class="card__button button js-card-button">В корзину</a>
+        <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="card">
+  <div class="tag">
+  <div class="tag__item">Хит</div>
+  <div class="tag__item tag__item_discount">%</div>
+</div>
+  <div class="card__heading">
+    <div class="card__heading-group">
+      <a href="#" class="card__title">Колумбия супремо</a>
+      <div class="card__rating">
+        <span>4,7</span>
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#star"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="card__heading-group">
+      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
+      <div class="card__sort">Speciality blend</div>
+    </div>
+  </div>
+  <a href="#" class="card__img">
+    <picture>
+      <source srcset="./img/content/card-1.webp" type="image/webp">
+      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
+    </picture>
+  </a>
+  <div class="card__text">
+    <div class="card__description">
+      <p>Красное яблоко, косточковые фрукты, какао</p>
+    </div>
+    <div class="card__info">
+      <div class="card__info-item">
+        <div class="card__info-title">кислотность</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">сладость</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot card__info-dot_active"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">горечь</div>
+        <div class="card__info-dots">
+          <div class="card__info-dot card__info-dot_active"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+          <div class="card__info-dot"></div>
+        </div>
+      </div>
+
+      <div class="card__info-item">
+        <div class="card__info-title">обжарка</div>
+        <div class="card__info-subtitle">средняя</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__bottom">
+    <div class="card__bottom-group">
+      <a href="#" class="card__favorites js-card-favorites">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
+        </svg>
+      </a>
+      <div class="select2-block">
+        <select class="select2 js-select2" data-placeholder="Помол">
+          <option></option>
+          <option value="1" selected>для гейзерной кофеварки (средний)</option>
+          <option value="2">для френч-пресса</option>
+          <option value="3">в зернах</option>
+          <option value="4">для капельной кофеварки</option>
+          <option value="5">для пуровера</option>
+          <option value="6">для эспрессо тонко (крупный)</option>
+          <option value="7">для капельной кофеварки</option>
+          <option value="8">для пуровера</option>
+          <option value="9">для эспрессо тонко (крупный)</option>
+        </select>
+      </div>
+    </div>
+    <div class="card__bottom-group">
+      <div class="card__pack">
+        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">250 г</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">600₽</div>
+        </a>
+
+        <a href="#" class="card__pack-item js-card-pack-item">
+          <div class="card__pack-title">
+            <div class="card__pack-size">1 кг</div>
+            <div class="card__pack-discount">-15%</div>
+          </div>
+          <div class="card__pack-price">1500₽</div>
+        </a>
+      </div>
+      <div class="card__block">
+        <a href="#" class="card__button button js-card-button">В корзину</a>
+        <div class="counter">
+	<span class="counter__button counter_minus disabled js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
+		</svg>
+	</span>
+	<input type="number" min="1" value="1" max="5" class="counter__number">
+	<span class="counter__button counter_plus js-counter-button">
+		<svg width="24" height="24">
+			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
+		</svg>
+	</span>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
             <div class="card">
   <div class="tag">
   <div class="tag__item">Хит</div>
@@ -503,766 +1919,8 @@
   </div>
 </div>
           </div>
-
-          <div class="swiper-slide pre-catalog__item">
-            <div class="card">
-  <div class="tag">
-  <div class="tag__item">Хит</div>
-  <div class="tag__item tag__item_discount">%</div>
-</div>
-  <div class="card__heading">
-    <div class="card__heading-group">
-      <a href="#" class="card__title">Колумбия супремо</a>
-      <div class="card__rating">
-        <span>4,7</span>
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#star"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="card__heading-group">
-      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
-      <div class="card__sort">Speciality blend</div>
-    </div>
-  </div>
-  <a href="#" class="card__img">
-    <picture>
-      <source srcset="./img/content/card-1.webp" type="image/webp">
-      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
-    </picture>
-  </a>
-  <div class="card__text">
-    <div class="card__description">
-      <p>Красное яблоко, косточковые фрукты, какао</p>
-    </div>
-    <div class="card__info">
-      <div class="card__info-item">
-        <div class="card__info-title">кислотность</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
         </div>
       </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">сладость</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">горечь</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">обжарка</div>
-        <div class="card__info-subtitle">средняя</div>
-      </div>
-    </div>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom-group">
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
-      <div class="select2-block">
-        <select class="select2 js-select2" data-placeholder="Помол">
-          <option></option>
-          <option value="1" selected>для гейзерной кофеварки (средний)</option>
-          <option value="2">для френч-пресса</option>
-          <option value="3">в зернах</option>
-          <option value="4">для капельной кофеварки</option>
-          <option value="5">для пуровера</option>
-          <option value="6">для эспрессо тонко (крупный)</option>
-          <option value="7">для капельной кофеварки</option>
-          <option value="8">для пуровера</option>
-          <option value="9">для эспрессо тонко (крупный)</option>
-        </select>
-      </div>
-    </div>
-    <div class="card__bottom-group">
-      <div class="card__pack">
-        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">250 г</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">600₽</div>
-        </a>
-
-        <a href="#" class="card__pack-item js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">1 кг</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">1500₽</div>
-        </a>
-      </div>
-      <div class="card__block">
-        <a href="#" class="card__button button js-card-button">В корзину</a>
-        <div class="counter">
-	<span class="counter__button counter_minus disabled js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
-		</svg>
-	</span>
-	<input type="number" min="1" value="1" max="5" class="counter__number">
-	<span class="counter__button counter_plus js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
-		</svg>
-	</span>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-
-          <div class="swiper-slide pre-catalog__item">
-            <div class="card">
-  <div class="tag">
-  <div class="tag__item">Хит</div>
-  <div class="tag__item tag__item_discount">%</div>
-</div>
-  <div class="card__heading">
-    <div class="card__heading-group">
-      <a href="#" class="card__title">Колумбия супремо</a>
-      <div class="card__rating">
-        <span>4,7</span>
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#star"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="card__heading-group">
-      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
-      <div class="card__sort">Speciality blend</div>
-    </div>
-  </div>
-  <a href="#" class="card__img">
-    <picture>
-      <source srcset="./img/content/card-1.webp" type="image/webp">
-      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
-    </picture>
-  </a>
-  <div class="card__text">
-    <div class="card__description">
-      <p>Красное яблоко, косточковые фрукты, какао</p>
-    </div>
-    <div class="card__info">
-      <div class="card__info-item">
-        <div class="card__info-title">кислотность</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">сладость</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">горечь</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">обжарка</div>
-        <div class="card__info-subtitle">средняя</div>
-      </div>
-    </div>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom-group">
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
-      <div class="select2-block">
-        <select class="select2 js-select2" data-placeholder="Помол">
-          <option></option>
-          <option value="1" selected>для гейзерной кофеварки (средний)</option>
-          <option value="2">для френч-пресса</option>
-          <option value="3">в зернах</option>
-          <option value="4">для капельной кофеварки</option>
-          <option value="5">для пуровера</option>
-          <option value="6">для эспрессо тонко (крупный)</option>
-          <option value="7">для капельной кофеварки</option>
-          <option value="8">для пуровера</option>
-          <option value="9">для эспрессо тонко (крупный)</option>
-        </select>
-      </div>
-    </div>
-    <div class="card__bottom-group">
-      <div class="card__pack">
-        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">250 г</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">600₽</div>
-        </a>
-
-        <a href="#" class="card__pack-item js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">1 кг</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">1500₽</div>
-        </a>
-      </div>
-      <div class="card__block">
-        <a href="#" class="card__button button js-card-button">В корзину</a>
-        <div class="counter">
-	<span class="counter__button counter_minus disabled js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
-		</svg>
-	</span>
-	<input type="number" min="1" value="1" max="5" class="counter__number">
-	<span class="counter__button counter_plus js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
-		</svg>
-	</span>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="pre-catalog">
-  <div class="container">
-    
-      <a href="#" class="link pre-catalog__link">
-  <span>Акции</span>
-  <svg width="32" height="32">
-    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-  </svg>
-</a>
-    
-    
-    <div class="pre-catalog__content">
-      <div class="swiper pre-catalog__slider js-pre-catalog-slider">
-        <div class="swiper-wrapper pre-catalog__slider-wrapper">
-          <div class="swiper-slide pre-catalog__item">
-            <div class="card">
-  <div class="tag">
-  <div class="tag__item">Хит</div>
-  <div class="tag__item tag__item_discount">%</div>
-</div>
-  <div class="card__heading">
-    <div class="card__heading-group">
-      <a href="#" class="card__title">Колумбия супремо</a>
-      <div class="card__rating">
-        <span>4,7</span>
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#star"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="card__heading-group">
-      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
-      <div class="card__sort">Speciality blend</div>
-    </div>
-  </div>
-  <a href="#" class="card__img">
-    <picture>
-      <source srcset="./img/content/card-1.webp" type="image/webp">
-      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
-    </picture>
-  </a>
-  <div class="card__text">
-    <div class="card__description">
-      <p>Красное яблоко, косточковые фрукты, какао</p>
-    </div>
-    <div class="card__info">
-      <div class="card__info-item">
-        <div class="card__info-title">кислотность</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">сладость</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">горечь</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">обжарка</div>
-        <div class="card__info-subtitle">средняя</div>
-      </div>
-    </div>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom-group">
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
-      <div class="select2-block">
-        <select class="select2 js-select2" data-placeholder="Помол">
-          <option></option>
-          <option value="1" selected>для гейзерной кофеварки (средний)</option>
-          <option value="2">для френч-пресса</option>
-          <option value="3">в зернах</option>
-          <option value="4">для капельной кофеварки</option>
-          <option value="5">для пуровера</option>
-          <option value="6">для эспрессо тонко (крупный)</option>
-          <option value="7">для капельной кофеварки</option>
-          <option value="8">для пуровера</option>
-          <option value="9">для эспрессо тонко (крупный)</option>
-        </select>
-      </div>
-    </div>
-    <div class="card__bottom-group">
-      <div class="card__pack">
-        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">250 г</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">600₽</div>
-        </a>
-
-        <a href="#" class="card__pack-item js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">1 кг</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">1500₽</div>
-        </a>
-      </div>
-      <div class="card__block">
-        <a href="#" class="card__button button js-card-button">В корзину</a>
-        <div class="counter">
-	<span class="counter__button counter_minus disabled js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
-		</svg>
-	</span>
-	<input type="number" min="1" value="1" max="5" class="counter__number">
-	<span class="counter__button counter_plus js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
-		</svg>
-	</span>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-
-          <div class="swiper-slide pre-catalog__item">
-            <div class="card">
-  <div class="tag">
-  <div class="tag__item">Хит</div>
-  <div class="tag__item tag__item_discount">%</div>
-</div>
-  <div class="card__heading">
-    <div class="card__heading-group">
-      <a href="#" class="card__title">Колумбия супремо</a>
-      <div class="card__rating">
-        <span>4,7</span>
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#star"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="card__heading-group">
-      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
-      <div class="card__sort">Speciality blend</div>
-    </div>
-  </div>
-  <a href="#" class="card__img">
-    <picture>
-      <source srcset="./img/content/card-1.webp" type="image/webp">
-      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
-    </picture>
-  </a>
-  <div class="card__text">
-    <div class="card__description">
-      <p>Красное яблоко, косточковые фрукты, какао</p>
-    </div>
-    <div class="card__info">
-      <div class="card__info-item">
-        <div class="card__info-title">кислотность</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">сладость</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">горечь</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">обжарка</div>
-        <div class="card__info-subtitle">средняя</div>
-      </div>
-    </div>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom-group">
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
-      <div class="select2-block">
-        <select class="select2 js-select2" data-placeholder="Помол">
-          <option></option>
-          <option value="1" selected>для гейзерной кофеварки (средний)</option>
-          <option value="2">для френч-пресса</option>
-          <option value="3">в зернах</option>
-          <option value="4">для капельной кофеварки</option>
-          <option value="5">для пуровера</option>
-          <option value="6">для эспрессо тонко (крупный)</option>
-          <option value="7">для капельной кофеварки</option>
-          <option value="8">для пуровера</option>
-          <option value="9">для эспрессо тонко (крупный)</option>
-        </select>
-      </div>
-    </div>
-    <div class="card__bottom-group">
-      <div class="card__pack">
-        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">250 г</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">600₽</div>
-        </a>
-
-        <a href="#" class="card__pack-item js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">1 кг</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">1500₽</div>
-        </a>
-      </div>
-      <div class="card__block">
-        <a href="#" class="card__button button js-card-button">В корзину</a>
-        <div class="counter">
-	<span class="counter__button counter_minus disabled js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
-		</svg>
-	</span>
-	<input type="number" min="1" value="1" max="5" class="counter__number">
-	<span class="counter__button counter_plus js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
-		</svg>
-	</span>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-
-          <div class="swiper-slide pre-catalog__item">
-            <div class="card">
-  <div class="tag">
-  <div class="tag__item">Хит</div>
-  <div class="tag__item tag__item_discount">%</div>
-</div>
-  <div class="card__heading">
-    <div class="card__heading-group">
-      <a href="#" class="card__title">Колумбия супремо</a>
-      <div class="card__rating">
-        <span>4,7</span>
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#star"></use>
-        </svg>
-      </div>
-    </div>
-    <div class="card__heading-group">
-      <div class="card__composition">Бразилия 70% / Эфиопия 30%</div>
-      <div class="card__sort">Speciality blend</div>
-    </div>
-  </div>
-  <a href="#" class="card__img">
-    <picture>
-      <source srcset="./img/content/card-1.webp" type="image/webp">
-      <img src="./img/content/card-1.png" width="403" height="191" alt="img" loading="lazy">
-    </picture>
-  </a>
-  <div class="card__text">
-    <div class="card__description">
-      <p>Красное яблоко, косточковые фрукты, какао</p>
-    </div>
-    <div class="card__info">
-      <div class="card__info-item">
-        <div class="card__info-title">кислотность</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">сладость</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot card__info-dot_active"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">горечь</div>
-        <div class="card__info-dots">
-          <div class="card__info-dot card__info-dot_active"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-          <div class="card__info-dot"></div>
-        </div>
-      </div>
-
-      <div class="card__info-item">
-        <div class="card__info-title">обжарка</div>
-        <div class="card__info-subtitle">средняя</div>
-      </div>
-    </div>
-  </div>
-  <div class="card__bottom">
-    <div class="card__bottom-group">
-      <a href="#" class="card__favorites js-card-favorites">
-        <svg width="18" height="18">
-          <use xlink:href="./img/sprites/sprite.svg#card-favorites"></use>
-        </svg>
-      </a>
-      <div class="select2-block">
-        <select class="select2 js-select2" data-placeholder="Помол">
-          <option></option>
-          <option value="1" selected>для гейзерной кофеварки (средний)</option>
-          <option value="2">для френч-пресса</option>
-          <option value="3">в зернах</option>
-          <option value="4">для капельной кофеварки</option>
-          <option value="5">для пуровера</option>
-          <option value="6">для эспрессо тонко (крупный)</option>
-          <option value="7">для капельной кофеварки</option>
-          <option value="8">для пуровера</option>
-          <option value="9">для эспрессо тонко (крупный)</option>
-        </select>
-      </div>
-    </div>
-    <div class="card__bottom-group">
-      <div class="card__pack">
-        <a href="#" class="card__pack-item card__pack-item_active js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">250 г</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">600₽</div>
-        </a>
-
-        <a href="#" class="card__pack-item js-card-pack-item">
-          <div class="card__pack-title">
-            <div class="card__pack-size">1 кг</div>
-            <div class="card__pack-discount">-15%</div>
-          </div>
-          <div class="card__pack-price">1500₽</div>
-        </a>
-      </div>
-      <div class="card__block">
-        <a href="#" class="card__button button js-card-button">В корзину</a>
-        <div class="counter">
-	<span class="counter__button counter_minus disabled js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#minus"></use>
-		</svg>
-	</span>
-	<input type="number" min="1" value="1" max="5" class="counter__number">
-	<span class="counter__button counter_plus js-counter-button">
-		<svg width="24" height="24">
-			<use xlink:href="./img/sprites/sprite.svg#plus"></use>
-		</svg>
-	</span>
-</div>
-      </div>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="about">
-  <div class="about__img">
-    <picture>
-      <source srcset="./img/content/about.webp" type="image/webp">
-      <img src="./img/content/about.jpg" width="1920" height="653" alt="img" loading="lazy">
-    </picture>
-  </div>
-  <div class="container">
-    <div class="about__content">
-      <div class="about__text">
-        <h2 class="about__title">Что такое Lintu coffee roasters?</h2>
-        <div class="about__description">
-          <p>
-            Ежедневная обжарка зерна на собственном производстве в Москве, где качество продукта контролируется
-            специалистами SCA. Персональный менеджер, своя служба доставки, полное техническое сопровождение,
-            тренинг-центр для разных уровней, предоставление оборудования в аренду.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="blog">
-  <div class="container">
-    <a href="#" class="link blog__link">
-  <span>Блог Lintu</span>
-  <svg width="32" height="32">
-    <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-  </svg>
-</a>
-    <div class="blog__content">
-      <a href="#" class="blog-card ">
-  <div class="blog-card__img">
-    <picture>
-      <source srcset="./img/content/blog-1.webp" type="image/webp">
-      <img src="./img/content/blog-1.jpg" width="318" height="231" alt="img" loading="lazy">
-    </picture>
-  </div>
-  
-  <div class="blog-card__title">Идеи кофейных подарков на Новый год</div>
-</a><a href="#" class="blog-card ">
-  <div class="blog-card__img">
-    <picture>
-      <source srcset="./img/content/blog-2.webp" type="image/webp">
-      <img src="./img/content/blog-2.jpg" width="318" height="231" alt="img" loading="lazy">
-    </picture>
-  </div>
-  
-  <div class="blog-card__title">Мутность кофе: почему она появляется и как можно на нее влиять</div>
-</a><a href="#" class="blog-card blog-card_wide">
-  <div class="blog-card__img">
-    <picture>
-      <source srcset="./img/content/blog-3.webp" type="image/webp">
-      <img src="./img/content/blog-3.jpg" width="318" height="231" alt="img" loading="lazy">
-    </picture>
-  </div>
-  
-  <div class="blog-card__title">Что такое премия «Обжарщик года»?</div>
-</a><a href="#" class="blog-card ">
-  <div class="blog-card__img">
-    <picture>
-      <source srcset="./img/content/blog-4.webp" type="image/webp">
-      <img src="./img/content/blog-4.jpg" width="318" height="231" alt="img" loading="lazy">
-    </picture>
-  </div>
-  
-  <div class="blog-card__title">Как правильно вливать воду при заваривании в пуровере</div>
-</a><a href="#" class="blog-card ">
-  <div class="blog-card__img">
-    <picture>
-      <source srcset="./img/content/blog-5.webp" type="image/webp">
-      <img src="./img/content/blog-5.jpg" width="318" height="231" alt="img" loading="lazy">
-    </picture>
-  </div>
-  
-  <div class="blog-card__title">Нужно ли перемешивать кофе во френч-прессе</div>
-</a>
     </div>
   </div>
 </section>
