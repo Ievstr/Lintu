@@ -188,22 +188,6 @@ $(function () {
 /***/ (() => {
 
 $(function () {
-  // let header = $('.js-header');
-  // let filter = $('.js-filter');
-
-  // $(window).scroll(function () {
-  // 	let currentScroll = $(window).scrollTop();
-  // 	let filterOffset = Math.round(filter.offset().top);
-  // 	let headerHeight = header.height();
-  // 	let filterHeight = filter.height();
-
-  // 	if (currentScroll >= filterOffset - headerHeight) {
-  // 		$('.js-filter').addClass('filter_fixed').css('top', headerHeight).closest('.catalog').css('paddingTop', filterHeight);
-  // 	} else {
-  // 		$('.js-filter').removeClass('filter_fixed').css('top', '').closest('.catalog').css('paddingTop', '');
-  // 	}
-  // });
-
   $('.js-filter-button').click(function (e) {
     e.preventDefault();
     if ($(window).width() > 1279) {
