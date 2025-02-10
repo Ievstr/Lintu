@@ -5650,6 +5650,10 @@ textarea {
     stroke: none;
   }
 
+  .filter__button-title {
+    display: none;
+  }
+
   .filter__button-arrow {
     display: none;
   }

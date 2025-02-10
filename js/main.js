@@ -200,6 +200,7 @@ $(function () {
   $('.js-filter-close').click(function (e) {
     e.preventDefault();
     $('body').removeClass('o-hidden');
+    $('.js-filter-button').removeClass('filter__button_active');
     $('.js-filter-dropdown').removeClass('filter__dropdown_active');
   });
 });
