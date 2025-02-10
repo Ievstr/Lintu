@@ -307,7 +307,473 @@
   <div class="container">
     <div class="catalog__heading">
       <h2 class="catalog__title">Каталог кофе</h2>
-      <div class="catalog__filter"></div>
+      <div class="filter js-filter">
+  <div class="filter__body">
+    <a href="#" class="filter__button js-filter-button">
+      <div class="filter__button-img">
+        <svg width="24" height="24">
+          <use xlink:href="./img/sprites/sprite.svg#filter"></use>
+        </svg>
+      </div>
+      <div class="filter__button-title">все фильтры</div>
+      <div class="filter__button-arrow">
+        <svg width="10" height="10">
+          <use xlink:href="./img/sprites/sprite.svg#arrow-down"></use>
+        </svg>
+      </div>
+    </a>
+
+    <div class="filter__list">
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">светлая обжарка</span>
+        </label>
+      </div>
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">средняя обжарка</span>
+        </label>
+      </div>
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">для молочных напитков</span>
+        </label>
+      </div>
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">для эспрессо</span>
+        </label>
+      </div>
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">для турки</span>
+        </label>
+      </div>
+      <div class="filter__item">
+        <label class="label label_checkbox">
+          <input type="radio" class="visually-hidden" name="filter">
+          <span class="label__box"></span>
+          <span class="label__text">с кислинкой</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="filter__dropdown js-filter-dropdown">
+      <div class="filter__dropdown-inner">
+        <div class="filter__dropdown-heading">
+          <!-- <div class="filter__dropdown-line"></div> -->
+          <div class="filter__block">
+            <div class="filter__find">Найдено 23</div>
+            <a href="#" class="filter__reset">
+              Сбросить фильтры
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="filter__dropdown-body">
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Тип</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">для эспрессо</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">для турки</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden" checked>
+                  <span class="label__box"></span>
+                  <span class="label__text">для молочных напитков</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">фильтр кофе</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">бленды</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">моно сорта</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">фильтр кофе</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Степень обжарки</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">светлая</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">средняя</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">темная</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Дескрипторы</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">шоколад</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">желтые фрукты</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">красное яблоко</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">какао</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">темная слива</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">карамель</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">орехи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">сухофрукты</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">кленовый сироп</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">кешью</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">молочный шоколад</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">специи</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Обработка</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">мытый</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">натуральная</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Страна</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Кения</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Бразилия</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Гватемала</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Эфиопия</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Колумбия</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Китай</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__dropdown-group">
+            <h3 class="filter__dropdown-group-title">Состав</h3>
+            <div class="filter__dropdown-list">
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">арабика 40 / робуста 60</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">арабика 70 / робуста 30</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Бразилия 70 / Эфиопия 30</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Бразилия 50 / Китай 50</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">арабика 40 / робуста 60</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">арабика 70 / робуста 30</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Бразилия 70 / Эфиопия 30</span>
+                </label>
+              </div>
+
+              <div class="filter__item">
+                <label class="label label_checkbox">
+                  <input type="checkbox" class="visually-hidden">
+                  <span class="label__box"></span>
+                  <span class="label__text">Бразилия 50 / Китай 50</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter__dropdown-bottom">
+          <a href="#" class="filter__dropdown-button button">Показать 265 товаров</a>
+          <a href="#" class="filter__dropdown-close button button_white js-filter-close">Отмена</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="filter__block">
+    <div class="filter__find">Найдено 23</div>
+    <a href="#" class="filter__reset">
+      Сбросить фильтры
+      <svg width="24" height="24">
+        <use xlink:href="./img/sprites/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+</div>
     </div>
     <div class="catalog__content">
       <div class="card">
