@@ -252,27 +252,18 @@ $(function () {
 /***/ (() => {
 
 $(function () {
-  // let lastScroll;
   var header = $('.js-header');
   $(window).scroll(function () {
     var currentScroll = $(window).scrollTop();
-
-    // if (currentScroll > 300) {
-    //   header.addClass('header_white');
-    // }
-
-    // currentScroll > 1000 && lastScroll > currentScroll ? scrollTop.addClass('button_top_active') : scrollTop.removeClass('button_top_active');
-
-    // portfolioSide && lastScroll > currentScroll ? portfolioSide.css('top', 180) : portfolioSide.css('top', '');
-
-    // lastScroll > currentScroll ? header.addClass('header_scroll_up') : header.removeClass('header_scroll_up');
     currentScroll > 0 ? header.addClass('header_scroll') : header.removeClass('header_scroll');
-
-    // lastScroll = currentScroll;
   });
   $('.js-header-search').click(function (e) {
     e.preventDefault();
     $(this).parent().addClass('header__search_active');
+  });
+  $('.js-search-close').click(function (e) {
+    e.preventDefault();
+    $(this).closest('.header__search').removeClass('header__search_active');
   });
 
   // $(document).mouseup(function (e) {

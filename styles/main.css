@@ -694,7 +694,7 @@ input[type=number] {
 .header__search .search {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 3px;
   transform: translateY(-50%);
   width: 0;
   opacity: 0;
@@ -729,6 +729,7 @@ input[type=number] {
   align-items: center;
   font-size: 12px;
   color: #393BC7;
+  line-height: 1;
 }
 
 .header__profile-bonus {
@@ -736,7 +737,6 @@ input[type=number] {
   display: flex;
   align-items: center;
   gap: 2px;
-  line-height: 1;
 }
 
 .header__profile-bonus::after {
@@ -931,6 +931,56 @@ input[type=number] {
 
 .burger {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  padding: 5px;
+  background-color: #F5F6FF;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.burger:hover {
+  background-color: #1D1F9D;
+}
+
+.burger:hover span {
+  background-color: #FFFFFF;
+}
+
+.burger span {
+  width: 22px;
+  height: 2px;
+  background-color: #393BC7;
+  transition: all 0.3s;
+}
+
+.burger span:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.burger_active span {
+  margin: 0;
+}
+
+.burger_active span:nth-child(1) {
+  transform: rotate(45deg);
+  margin-bottom: -1px;
+}
+
+.burger_active span:nth-child(2) {
+  display: none;
+}
+
+.burger_active span:nth-child(3) {
+  transform: rotate(-45deg);
+  margin-top: -1px;
 }
 
 .form__content {
@@ -1225,6 +1275,12 @@ textarea {
 
 .search {
   position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.search .form {
+  width: 100%;
 }
 
 .search input {
@@ -1277,6 +1333,12 @@ textarea {
 
 .search .select2-container--open .select2-selection__arrow {
   background: url(../img/content/arrow-dropdown-white.svg) 50%/contain no-repeat;
+}
+
+.search__close {
+  display: flex;
+  width: 48px;
+  height: 48px;
 }
 
 .link {
@@ -4205,6 +4267,11 @@ textarea {
   letter-spacing: -0.011em;
 }
 
+.account__logout {
+  width: 220px;
+  color: #F34242;
+}
+
 .account__orders {
   margin-top: 16px;
 }
@@ -4722,10 +4789,6 @@ textarea {
     line-height: 1;
   }
 
-  .header__profile-info {
-    line-height: 1;
-  }
-
   .header__bottom {
     display: flex;
     justify-content: space-between;
@@ -4842,46 +4905,6 @@ textarea {
 
   .burger {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 42px;
-    height: 42px;
-    flex-shrink: 0;
-    padding: 5px;
-    background-color: #F5F6FF;
-    border-radius: 8px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .burger span {
-    width: 22px;
-    height: 2px;
-    background-color: #393BC7;
-    transition: all 0.3s;
-  }
-
-  .burger span:not(:last-child) {
-    margin-bottom: 6px;
-  }
-
-  .burger_active span {
-    margin: 0;
-  }
-
-  .burger_active span:nth-child(1) {
-    transform: rotate(45deg);
-    margin-bottom: -1px;
-  }
-
-  .burger_active span:nth-child(2) {
-    display: none;
-  }
-
-  .burger_active span:nth-child(3) {
-    transform: rotate(-45deg);
-    margin-top: -1px;
   }
 
   .select2-selection__rendered {
@@ -4910,6 +4933,10 @@ textarea {
     height: auto !important;
     line-height: 34px !important;
     white-space: nowrap !important;
+  }
+
+  .search__close {
+    display: none;
   }
 
   .link {
@@ -6253,6 +6280,10 @@ textarea {
 
   .account__payment-item:last-child {
     margin-right: 16px;
+  }
+
+  .account__logout {
+    width: 100%;
   }
 
   .account__orders-item-info {
